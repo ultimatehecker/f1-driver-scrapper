@@ -1,0 +1,22 @@
+{
+  "name": "f1-driver-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ultimatehecker/f1-driver-scrapper.git"
+  },
+  "author": "ultimate_hecker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ultimatehecker/f1-driver-scrapper/issues"
+  },
+  "homepage": "https://github.com/ultimatehecker/f1-driver-scrapper#readme",
+  "dependencies": {
+    "puppeteer": "^20.1.1"
+  }
+}
