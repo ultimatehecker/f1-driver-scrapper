@@ -15,6 +15,17 @@ require("dotenv").config();
 
     /* Web Scrapping */
 
+    await page.waitForSelector(".wikitable.sortable.jquery-tablesorter");
+
+    const content = await page.$$eval('tbody > tr', rows => {
+        return Array.from(rows, row => {
+            const col = row.querySelectorAll('td');
+            return Array.from(col, c => c.textContent.trim().replace(/['"]+/g, ''))
+        });
+    });
+
+    console.log(content);
+
     /* Storing Data in CSV file */
 
     await broswer.close();
