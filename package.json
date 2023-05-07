@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ultimatehecker/f1-driver-scrapper#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "puppeteer": "^20.1.1"
   }
 }
